@@ -1,5 +1,4 @@
-# Paige's Notepad
-</br>
+# Paige's Notepad WPF Application
 
 #Menu Structure
 - File 
