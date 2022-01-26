@@ -15,6 +15,6 @@
   - "Close"
     - close the application
 - Help
-  - Successful implementation of an About Box.
+  - implementation of an About Box.
 - Status Bar
-  - Status bar showing current count of characters and changing while editing. 
+  - showing current count of characters and changing while editing. 
