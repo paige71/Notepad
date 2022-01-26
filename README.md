@@ -1,4 +1,4 @@
-# Paige's Notepad WPF Application
+# Paige's Notepad WPF Application XAML
 ![](Paige's%20Notepad.png)
 - File 
   - "New" 
