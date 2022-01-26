@@ -1,0 +1,28 @@
+﻿<Window x:Class="Notepad.AboutBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Notepad"
+        mc:Ignorable="d"
+        Title="About Notepad" Height="250" Width="400" FontFamily="Times New Roman" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <!--Identifies about box properties and its contents-->
+        <TextBlock Margin="15" VerticalAlignment="Top" FontSize="16">
+            <Bold>
+                <Run Text="Notepad"/>
+            </Bold>          
+            <LineBreak/>           
+                <Run Text="This simple notepad is using C#.NET WPF"/>
+            <LineBreak/>   
+            <LineBreak/>   
+                <Run Text="By: Paige Lam"/>
+            <LineBreak/>
+                <Run Text="Assignment 2 WPF Application"/>
+             <LineBreak/>
+                <Run Text="Date: Oct 1, 2021"/>
+            <LineBreak/>   
+                <Run Text="Course: PROG2121 - Windows Programming"/>
+        </TextBlock>
+    </Grid >
+</Window>

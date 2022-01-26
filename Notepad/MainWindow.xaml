@@ -1,0 +1,51 @@
+﻿<Window x:Class="Notepad.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Notepad"
+        mc:Ignorable="d"
+        Title="Paige Notepad" Height="450" Width="800" Icon ="Notepad.png" 
+        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ResizeMode="CanResizeWithGrip" 
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <!--Identifies textbox properties-->
+        <TextBox x:Name="text_area" TextChanged="text_area_TextChanged" Margin="0,17,-0.4,23.2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" 
+                     BorderThickness="0" Background="White" ScrollViewer.HorizontalScrollBarVisibility="Visible" 
+                     ScrollViewer.VerticalScrollBarVisibility="Visible">
+        </TextBox>
+
+        <!--Identifies menu items and its properties-->
+        <Menu IsMainMenu="True" Height="20" Margin="0" VerticalAlignment="Top" HorizontalAlignment="Stretch">
+
+            <!--File-->
+            <MenuItem Header="File">
+                <MenuItem x:Name="new" Header="New" Click="new_Click"></MenuItem>
+                <MenuItem x:Name="open" Header="Open" Click="open_Click"></MenuItem>
+                <MenuItem x:Name="save_as" Header="Sve As" Click="save_as_Click"></MenuItem>
+                <Separator></Separator>
+                <MenuItem x:Name="close" Header="Close" Click="close_Click"></MenuItem>
+            </MenuItem>
+
+            <!--Options-->
+            <MenuItem Header="Options"></MenuItem>
+
+            <!--Help-->
+            <MenuItem Header="Help">
+                <MenuItem x:Name="about" Header="About" Click="about_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
+
+        <DockPanel>
+            <!--Identifies the character count and its properties-->
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
+                <Label Content="Character Count:"></Label>
+                <Label x:Name="CharacterCount" Content="0" ></Label>
+            </StackPanel>
+        </DockPanel>
+
+    </Grid>
+
+
+
+</Window>
