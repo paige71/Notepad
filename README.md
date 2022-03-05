@@ -1,5 +1,4 @@
 # Paige's Notepad WPF Application XAML
-![](Paige's%20Notepad.png)
 - File 
   - "New" 
     - allows the user to create a new document. If work needs to be saved, using the Save As dialog to ask for file info.
